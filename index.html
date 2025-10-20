@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimitris Tsitsigkos</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/d_tsitsigkos.jpeg" alt="Dimitris Tsitsigkos" width="100">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Dimitris Tsitsigkos">Dimitris Tsitsigkos</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a  href="mailto:tsitsigkosdim@gmail.com" class="contact-link">tsitsigkosdim@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+306942951698" class="contact-link">+30 6942951698</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ioannina/Athens, Greece</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/dTsitsigkos" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-github" style="font-size: 48px;"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://gr.linkedin.com/in/dimitris-tsitsigkos" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-linkedin" style="font-size: 48px;"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=z_KVU0QAAAAJ" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="./assets/images/32px-Google_Scholar_logo.svg.png"  style="font-size: 48px;" data-testimonials-avatar>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=z_KVU0QAAAAJ" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="./assets/images/icons8-dblp-48.png"  data-testimonials-avatar>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+           -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            My name is Dimitris Tsitsigkos and I completed my B.Sc. in Informatics and Telecommunications (<a href="https://www.di.uoa.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">DIT</a>)  in 2012, followed by 
+            an M.Sc. in Computing Systems: Software and Hardware in 2016, both at the National and Kapodistrian University of Athens (<a href="https://en.uoa.gr/" style="display:inline;" target="_blank" rel="noopener noreferrer">NKUA</a>). 
+            In 2025, I finished my Ph.D. at the Computer Science and Engineering Department (<a href="https://www.cse.uoi.gr/?lang=en" style="display:inline;" target="_blank" rel="noopener noreferrer">CSE</a>) of the University of Ioannina (<a href="https://uoi.gr/en/" style="display:inline;"target="_blank" rel="noopener noreferrer">UoI</a>), 
+            supervised by Professor <a href="https://www.cs.uoi.gr/~nikos/indexb.html" style="display:inline;" target="_blank" rel="noopener noreferrer"> Nikos Mamoulis</a>, Professor <a href="https://pbour.github.io/" style="display:inline;" target="_blank" rel="noopener noreferrer"> Panagiotis Bouros</a>  
+            and Principal Researcher <a href="https://web.imsi.athenarc.gr/~mter/" style="display:inline;" target="_blank" rel="noopener noreferrer"> Manolis Terrovitis</a>. I'm currently working 
+            as a postdoctoral researcher at the <a href="https://archimedesai.gr/en/" style="display:inline;" target="_blank" rel="noopener noreferrer">Archimedes research unit</a> , focusing on advanced data management systems. 
+          </p>
+
+          <p>
+            Earlier in my career, I was a software engineer at the Institute for the Management of Information Systems (<a href="https://www.imsi.athenarc.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">IMIS</a>)  at the “Athena” Research and Innovation Centre (<a href="https://www.athenarc.gr/en/home" style="display:inline;" target="_blank" rel="noopener noreferrer">Athena RC</a>) , 
+            where I worked with <a href="https://web.imsi.athenarc.gr/~mter/" style="display:inline;"target="_blank" rel="noopener noreferrer"> Manolis Terrovitis</a>.  During this time, I took part in several Greek and EU-funded projects, which helped me gain valuable experience in big data frameworks. 
+          </p>
+          <p>
+            My research interests lie in the areas of data management (relational and multi-dimensional), big data management, parallel computing, distributed and real-time analytics.
+          </p>
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+          <a href="./assets/files/cv.pdf" download class="btn-download top-right">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download CV</span>
+          </a>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ph.D., Computer Science</h4>
+
+              <span>Jul. 2019 – Dec. 2024</span>
+
+              <p class="timeline-text">
+                Department of Computer Science & Engineering (<a href="https://www.cse.uoi.gr/?lang=en" style="display:inline;" target="_blank" rel="noopener noreferrer">CSE</a>), University of Ioannina
+              </p>
+              <p class="timeline-text">
+                
+                <p class="timeline-text">
+
+                <a href="./assets/files/dissertations/PhDThesis.pdf" style="display:inline;"target="_blank" rel="noopener noreferrer">Thesis: In-memory Indexing for Parallel Processing of Single and Multi-Dimensional Queries </a>
+              </p>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">M.Sc., Computer Systems: Software and Hardware, Computer Science</h4>
+
+              <span>Nov. 2012 – Sep. 2016</span>
+
+              <p class="timeline-text">
+                Department of Informatics and Telecommunications (<a href="https://www.di.uoa.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">DIT</a>) , University of Athens
+              </p>
+
+              <p class="timeline-text">
+                Grade: 8.2/10 (≈ 3.28/4.0 GPA)
+              </p>
+
+
+              <p class="timeline-text">
+
+                <a href="./assets/files/dissertations/MscThesis.pdf" style="display:inline;"target="_blank" rel="noopener noreferrer">Thesis: Complex Event Processing(CEP) for Intrusion Detection </a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.Sc., Computer Science</h4>
+
+              <span>Sep. 2006 – Jun. 2012</span>
+
+              <p class="timeline-text">
+                Department of Informatics and Telecommunications (<a href="https://www.di.uoa.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">DIT</a>) , University of Athens
+              </p>
+
+              <p class="timeline-text">
+                Grade: 7.7/10 (≈ 3,08/4.0 GPA)
+              </p>
+
+              <p class="timeline-text">
+                Thesis: Clustering Wikipedia resources              
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PostDoctoral Researcher</h4>
+
+              <span>Feb. 2025 — Present</span>
+
+              <p class="timeline-text">
+                <a href="https://archimedesai.gr/en/" style="display:inline;" target="_blank" rel="noopener noreferrer">Archimedes unit</a> of Athena Research Center, Athens, Greece
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Doctoral Researcher</h4>
+
+              <span>Jan. 2024 – Dec. 2024</span>
+
+              <p class="timeline-text">
+                  Department of Computer Science & Engineering (<a href="https://www.cse.uoi.gr/?lang=en" style="display:inline;" target="_blank" rel="noopener noreferrer">CSE</a>), University of Ioannina
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer</h4>
+
+              <span>Dec. 2012 – Dec. 2023</span>
+
+              <p class="timeline-text">
+                Information Management Systems Institute (<a href="https://www.imsi.athenarc.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">IMIS</a>), Athens, Greece
+              </p>
+
+            </li>
+
+             <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Researcher Internship</h4>
+
+              <span>May. 2022 – Jul. 2022</span>
+
+              <p class="timeline-text">
+                <a href="https://www.imsi.athenarc.gr/en" style="display:inline;" target="_blank" rel="noopener noreferrer">Institute of Computer Science</a>, Johannes Gutenberg University Mainz, Germany
+              </p>
+            </li>
+
+
+            </li>
+
+             <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer</h4>
+
+              <span>Apr. 2017 – Nov. 2018</span>
+
+              <p class="timeline-text">
+                Hellenic Army Information Technology Support Center, Athens, Greece
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Technical Skills</h3>
+
+          <dl class="skills-list">
+            <div class="skill-row">
+              <dt>Programming Languages</dt>
+              <dd>C, C++, Java, Python</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Databases</dt>
+              <dd>MySQL, PostgreSQL, PostGIS, HBase</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Parallel & Distributed Systems</dt>
+              <dd>Hadoop, Spark, Dask, OpenMP, SIMD, MPI</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Frameworks</dt>
+              <dd>Spring</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Web Development</dt>
+              <dd>JavaScript, JSP, JSF, PHP</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Operating Systems</dt>
+              <dd>Ubuntu, Microsoft Windows, macOS</dd>
+            </div>
+          </dl>
+        </section>
+
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Service</h3>
+
+          <dl class="skills-list">
+            <div class="skill-row">
+              <dt>Member of Program Committee</dt>
+              <dd>TSAS 2023, ICDE 2026, IEEE BigData 2025</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>External Reviewer</dt>
+              <dd>ICDE 2019-2025, VLDB 2019-2023, SIGMOD 2020, SIGSPATIAL 2020-2023, EDBT 2021-2025, ICDM 2025</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Other</h3>
+
+          <dl class="skills-list">
+            <div class="skill-row">
+              <dt>Languages</dt>
+              <dd>Greek (native), English (Advanced)</dd>
+            </div>
+
+            <div class="skill-row" >
+              <dt>Awards</dt>
+              <dd>3rd place - <a href="https://databasecontest2024.athenarc.gr/" style="display:inline;">Future of Database Programming Contest</a> 
+                <br>(March 2025, Athens).</dd>
+            </div>
+
+            <div class="skill-row">
+              <dt>Volunteer</dt>
+              <dd>European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025
+
+ </dd>
+            </div>
+          </dl>
+        </section>
+
+      </article>
+
+
+  <!--
+    - #PUBLICATIONS
+  -->
+
+       <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <ul class="publications-list">
+
+
+          <!-- Publication 1 -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Hecatoncheir: Scaling up and out spatial data management
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">AT. Georgiadis, A. Michalopoulos, D. Dimitropoulos, <span class="venue_highlight">D. Tsitsigkos</span>, and N. Mamoulis,</span>
+                <span class="dot">•</span>
+                <span class="venue">ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (<span class="venue_highlight">SIGSPATIAL</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2024">2025 (to appear)</time>
+              </div>
+
+              <div class="pub-links">
+                <!--<a href="https://doi.org/10.1145/3698194" target="_blank" rel="noopener noreferrer">DOI</a>-->
+                <a href="./assets/files/papers/2025_SIGSPATIAL_Hecatoncheir:Scaling_up_and_out_spatial_data_management.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a href="https://github.com/ThanGeo/Hecatoncheir" target="_blank" rel="noopener noreferrer">CODE</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Publication 1 -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Efficient Distance Queries on Non-point Data
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">A. Michalopoulos, <span class="venue_highlight">D. Tsitsigkos</span>, P. Bouros, N. Mamoulis, and M. Terrovitis,</span>
+                <span class="dot">•</span>
+                <span class="venue">
+                  ACM Transactions on Spatial Algorithms and Systems (<span class="venue_highlight">ACM TSAS</span>)
+                </span>
+                <span class="dot">•</span>
+                <time datetime="2024">2024</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1145/3698194" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2024_TSAS_Efficient_Distance_Queries_on_Non-point_Data.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Publication 2 -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Two-layer Space-oriented Partitioning for Non-point Data
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors"><span class="venue_highlight">D. Tsitsigkos</span>, P. Bouros, K. Lampropoulos, N. Mamoulis, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue">IEEE Transactions on Knowledge and Data Engineering (<span class="venue_highlight">TKDE</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2023">2023</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1109/TKDE.2023.3297975" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2024_TKDE_Two-layer_Space-oriented_Partitioning_for_Non-point_Data.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a href="https://github.com/dTsitsigkos/two-layer" target="_blank" rel="noopener noreferrer">CODE</a>
+              </div>
+            </div>
+
+          </li>
+
+          <!-- Publication 3 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Efficient Nearest Neighbor Queries on Non-point Data
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">A. Michalopoulos, <span class="venue_highlight">D. Tsitsigkos</span>, P. Bouros, N. Mamoulis, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue">ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (<span class="venue_highlight">SIGSPATIAL</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2023 (short paper)</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1145/3589132.3625609" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2023_SIGSPATIAL_Efficient_Nearest_Neighbor_Queries_on_Non-point_Data.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+
+          <!-- Publication 4 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                A Two-layer Partitioning for Non-point Spatial Data
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors"><span class="venue_highlight">D. Tsitsigkos</span>, K. Lampropoulos, P. Bouros, N. Mamoulis, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue"> International Conference on Data Engineering (<span class="venue_highlight">ICDE</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2021 </time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1109/ICDE51399.2021.00157" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2021_ICDE_A Two-layer_Partitioning_for_Non-point_Spatial_Data.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                <a href="https://github.com/dTsitsigkos/two-layer" target="_blank" rel="noopener noreferrer">CODE</a>
+              </div>
+            </div>
+
+          </li>
+
+          <!-- Publication 5 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                In-Memory Interval Joins
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">P. Bouros, N. Mamoulis, <span class="venue_highlight">D. Tsitsigkos</span>, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue"> The International Journal on Very Large Databases (<span class="venue_highlight">VLDB J.</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2021</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1007/s00778-020-00639-0" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2021_VLDBJ_In-Memory_Interval_Joins.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+
+
+      <!-- Publication 6 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Band Joins for Interval Data
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">P. Bouros, K. Lampropoulos, <span class="venue_highlight">D. Tsitsigkos</span>, N. Mamoulis, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue"> International Conference on Extending Database Technology (<span class="venue_highlight">EDBT</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2020 (short paper)</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.5441/002/edbt.2020.53" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2020_EDBT_Band_Joins_for_Interval_Data.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+  
+
+       <!-- Publication 7 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Parallel In-Memory Evaluation of Spatial Joins
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors"><span class="venue_highlight">D. Tsitsigkos</span>, P. Bouros, N. Mamoulis, and M. Terrovitis</span>
+                <span class="dot">•</span>
+                <span class="venue"> ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (<span class="venue_highlight">SIGSPATIAL</span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2019 (short paper)</time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1145/3347146.3359343" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2019_SIGSPATIAL_Parallel_In-Memory_Evaluation_of_Spatial_Joins.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+
+
+           <!-- Publication 8 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                Exploiting Social Networking and Mobile Data for Crisis Detection and Management
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">	K. Doka, I. Mytilinis, I. Giannakopoulos, I. Konstantinou, <span class="venue_highlight">D. Tsitsigkos</span>, M. Terrovitis, N. Koziris:</span>
+                <span class="dot">•</span>
+                <span class="venue"> <span class="venue_highlight">ISCRAM-med</span></span>
+                <span class="dot">•</span>
+                <time datetime="2022">2017 </time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-319-67633-3_3" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2017_ISCRAM_Exploiting_Social_Networking_and_Mobile_Data_for_Crisis_Detection_and_Management.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+
+
+           <!-- Publication 9 (conference poster / short) -->
+          <li class="pub-item">
+            <div class="pub-main">
+              <div class="pub-title">
+                MoDisSENSE: A Distributed Spatio-Temporal and Textual Processing Platform for Social Networking Services.
+              </div>
+
+              <div class="pub-meta">
+                <span class="authors">	I. Mytilinis, I. Giannakopoulos, I. Konstantinou, K. Doka, <span class="venue_highlight">D. Tsitsigkos</span>, M. Terrovitis, L. Giampouras, N.Koziris</span>
+                <span class="dot">•</span>
+                <span class="venue"> ACM International Conference on Management of Data (<span class="venue_highlight">SIGMOD </span>)</span>
+                <span class="dot">•</span>
+                <time datetime="2022">2015 (demo paper) </time>
+              </div>
+
+              <div class="pub-links">
+                <a href="https://doi.org/10.1145/2723372.2735375" target="_blank" rel="noopener noreferrer">DOI</a>
+                <a href="./assets/files/papers/2015_SIGMOD_MoDisSENSE:A_Distributed_Spatio-Temporal_and_Textual.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+              </div>
+            </div>
+
+          </li>
+
+        </ul>
+      </article>
+
+  <!--
+    - #PROJECTS
+  -->    
+
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="project-list">
+
+            <!-- Project 1 -->
+            <li class="project-card">
+              <img src="./assets/images/hec.png" alt="Graph Recommender" class="project-image">
+
+              <div class="project-content">
+                <h3 class="project-title">In-memory Spatial Analytic Made Scalable (MESA)</h3>
+                <p class="project-desc">
+                  MThe project focuses on advancing spatial data management through several key objectives. It aims to design novel partitioning schemes 
+                  for spatial data that ensure independent partitions, eliminating the need for synchronization or communication during spatial analysis. 
+                  Efficient in-memory spatial indices will be developed to support essential query types, including range queries, nearest-neighbor queries,
+                  spatial joins, and distance joins. The project also seeks to propose effective strategies for managing both relatively static and highly 
+                  dynamic spatial data. Customized techniques for partitioning, indexing, and querying will be created to handle various spatial data types, 
+                  such as points, polylines, and polygons. Additionally, the project will leverage modern hardware capabilities, particularly multi-core 
+                  parallelism, to optimize performance. Finally, all these components will be integrated into a unified spatial data management system.</br>
+                  
+                  <span class="venue_highlight">Responsibilities:</span> Implemented novel parallel and non-parallel index structures for spatial queries, 
+                  including spatial join, range queries, and k-NN. Contributed to the design and development of a prototype distributed spatial data 
+                  management framework using MPI and OpenMP.</br>
+                  <span class="venue_highlight">Programming languages: </span> C++ </br>
+                  <span class="venue_highlight">Distributed/parallel Framework:</span> MPI, OpenMP </br>
+
+                </p>
+                
+
+                <div class="project-links">
+                  <a href="https://www.cs.uoi.gr/~nikos/mesa/" target="_blank" rel="noopener noreferrer">Site</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project 2 -->
+            <li class="project-card">
+              <img src="./assets/images/more.jpg" alt="Graph Recommender" class="project-image">
+
+              <div class="project-content">
+                <h3 class="project-title">MORE: Management of Real-time Energy data</h3>
+                <p class="project-desc">
+                  MORE will deliver a platform to address the technical challenges in time series and stream management, focusing on the RES industry. 
+                  Specifically, more’s platform will introduce an architecture incorporating edge computing and cloud computing to address responsiveness 
+                  and the need for sophisticated analytics simultaneously. This architecture will be combined with time series summarization techniques, 
+                  or as we more accurately term them in MORE, modeling techniques for sensor data. Models are any compressed representations that allow 
+                  the reconstruction of the original data points of a time series (e.g., a linear function) within a known error-bound (possibly zero). 
+                  This approach synergizes with the edge computing approach since summarization can be done at the edge, reducing the load in the whole 
+                  data processing pipeline.</br>
+                  <span class="venue_highlight">Responsibilities:</span> Implemented a continuous evaluation module of sliding window aggregations on 
+                  the edge, using Java. Additionally, I implemented all the parallel and distributed versions of pattern extraction methods using Python 
+                  and Dask framework.</br>
+                  <span class="venue_highlight">Programming languages: </span> Java, Python </br>
+                  <span class="venue_highlight">Distributed/parallel Framework:</span> Dask </br>
+
+                </p>
+                
+
+                <div class="project-links">
+                  <a href="https://www.more2020.eu/" target="_blank" rel="noopener noreferrer">Site</a>
+                  <a href="https://github.com/MORE-EU" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project 3 -->
+            <li class="project-card">
+              <img src="./assets/images/amnesia.png" alt="Portfolio Website" class="project-image">
+
+              <div class="project-content">
+                <h3 class="project-title">Amnesia: A Powerful Data Anonymization Platform </h3>
+                <p class="project-desc">
+                  Amnesia is a web-based platform for anonymizing data, including relational, multi-dimensional, and hierarchical data. Currently, 
+                  the platform supports a variety of anonymization algorithms such as Flush, parallel Flush, k-anonymity, km-anonymity, and Incognito. 
+                  Amnesia also supports the definition of custom anonymization rules and hierarchies. </br>
+                  
+                  <span class="venue_highlight">Responsibilities:</span> Built the framework from scratch and led its development as the main software engineer until 2020.</br>
+                  <span class="venue_highlight">Programming languages: </span> JavaScript, Java </br>
+                  <span class="venue_highlight">Other technologies/tools:</span> Spring </br>
+                </p>
+
+                <div class="project-links">
+                  <a href="https://dimitris.example.com" target="_blank" rel="noopener noreferrer">Live Site</a>
+                  <a href="https://amnesia.openaire.eu/amnesia/" target="_blank" rel="noopener noreferrer">Site</a>
+                  <a href="https://github.com/dTsitsigkos/Amnesia" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Project 4 -->
+            <li class="project-card">
+              <img src="./assets/images/modissense.png" alt="Edge Indexing" class="project-image">
+
+              <div class="project-content">
+                <h3 class="project-title">MoDisSENSE: A Distributed Spatio-Temporal and Textual Processing Platform for Social Networking Services. </h3>
+                <p class="project-desc">
+                  MoDisSENSE is an open-source distributed platform that provides personalized search for points of interest (POIs) and trending 
+                  events based on the user's social graph, i.e., by combining spatio-textual user-generated data (e.g. GPS traces, check-ins, uses 
+                  profiles, graph of friendship relations, user posts in social networks, etc.).</br>
+                  
+                  <span class="venue_highlight">Responsibilities:</span> Implemented a distributed version of the DBSCAN algorithm for POI discovery, and 
+                  a distributed algorithm that collects GPS traces and reconstructs the trajectories of the end-users. Both algorithms were implemented using 
+                  Hadoop, Hbase and postGIS. I also developed all web services that are relevant to POI discovery and suggestion.</br>
+                  <span class="venue_highlight">Programming languages: </span> Java </br>
+                  <span class="venue_highlight">Distributed/parallel Framework:</span> Hadoop </br>
+                  <span class="venue_highlight">Databases:</span> >Hbase, PostGIS
+                </p>
+
+                <div class="project-links">
+                  <a href="http://www.modissense.gr/" target="_blank" rel="noopener noreferrer">Site</a>
+                  <a href="https://github.com/modissense" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <footer class="site-footer" style="text-align:center; padding: 1rem; font-size: 0.9rem; color: #555;">
+    This website is based on the <a href="https://github.com/codewithsadee/vcard-personal-portfolio" style="display:inline;" target="_blank" rel="noopener noreferrer"> code</a> of <a href="https://github.com/codewithsadee" style="display:inline;" target="_blank" rel="noopener noreferrer"> Sadee</a>.
+  </footer>
+
+</body>
+
+
+
+</html>
