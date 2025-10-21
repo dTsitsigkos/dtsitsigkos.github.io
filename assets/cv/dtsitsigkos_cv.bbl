@@ -19,6 +19,50 @@
 
 \refsection{1}
   \datalist[entry]{ydnt/global//global/global}
+    \entry{DBLP:journals/corr/abs-2505-01180}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=336e98d2114d7b680d49d4068356c9e7}{%
+           family={Tsitsigkos},
+           familyi={T\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ed071b99e107a780807bcae129814df}{%
+           family={Michalopoulos},
+           familyi={M\bibinitperiod},
+           given={Achilleas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=364fce917c9b4c436a355a46622d38c0}{%
+           family={Mamoulis},
+           familyi={M\bibinitperiod},
+           given={Nikos},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91d1c75a11be747b5e0d1bfbadea6ed9}{%
+           family={Terrovitis},
+           familyi={T\bibinitperiod},
+           given={Manolis},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5f7639f6dc5394298bc97c7499a8a64}
+      \strng{fullhash}{176baa7f5054a7d2d5de5bf4cd8b1351}
+      \strng{bibnamehash}{176baa7f5054a7d2d5de5bf4cd8b1351}
+      \strng{authorbibnamehash}{176baa7f5054a7d2d5de5bf4cd8b1351}
+      \strng{authornamehash}{b5f7639f6dc5394298bc97c7499a8a64}
+      \strng{authorfullhash}{176baa7f5054a7d2d5de5bf4cd8b1351}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} International Conference on Data Engineering, ({ICDE})}
+      \field{title}{BS-tree: {A} gapped data-parallel B-tree}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
     \entry{DBLP:journals/tkde/TsitsigkosBLMT24}{article}{}
       \name{author}{5}{ul=3}{%
         {{un=0,uniquepart=base,hash=336e98d2114d7b680d49d4068356c9e7}{%
