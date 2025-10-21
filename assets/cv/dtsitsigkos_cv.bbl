@@ -59,7 +59,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{{IEEE} International Conference on Data Engineering, ({ICDE})}
-      \field{title}{BS-tree: {A} gapped data-parallel B-tree}
+      \field{title}{B$^S$-tree: {A} gapped data-parallel B-tree}
       \field{year}{2026}
       \true{nocite}
     \endentry
