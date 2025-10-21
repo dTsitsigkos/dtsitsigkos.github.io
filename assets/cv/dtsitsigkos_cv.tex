@@ -1,0 +1,405 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ydnt, maxbibnames=5]{biblatex}
+
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+\DeclareNameAlias{sortname}{given-family}
+\DeclareNameAlias{default}{given-family}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\newenvironment{job}[2]
+{
+	\begin{tabularx}{\linewidth}{@{}l X r@{}}
+		\small
+		\textbf{#1} & \hfill &  #2 \\[3.75pt]
+	\end{tabularx}
+	\begin{minipage}[t]{\linewidth}
+		\footnotesize
+		\setlength{\parskip}{3pt} % spacing between paragraphs
+		\setlength{\parindent}{0pt} % no indentation
+	}
+	{
+	\end{minipage}    
+}
+
+\usepackage{enumitem}
+
+% Define compact list styles
+\setlist[itemize,1]{nosep,after=\strut, leftmargin=2em, itemsep=3pt, label=•}
+\setlist[itemize,2]{nosep,after=\strut, leftmargin=2em, itemsep=2pt, label=$\circ$}
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Dimitris Tsitsigkos} \\[7.5pt]
+\Large{Software Engineer} \\[7.5pt]
+
+\href{https://gr.linkedin.com/in/dimitris-tsitsigkos}{\raisebox{-0.05\height}\faLinkedin\ dtsitsigkos} \ $|$ \ 
+\href{https://dtsitsigkos.github.io/}{\raisebox{-0.05\height}\faGlobe \ dtsitsigkos.github.io} \ $|$ \  
+\href{https://dblp.org/pid/163/0537.html}{\raisebox{-0.05\height}\faDatabase\ DBLP}  \ $|$ \ 
+\href{https://scholar.google.com/citations?user=z_KVU0QAAAAJ}{\raisebox{-0.05\height}\faGraduationCap\ Google Scholar}\ $|$ \
+\href{https://github.com/dTsitsigkos}{\raisebox{-0.05\height}\faGithub\ dtsitsigkos} \ 
+
+\href{mailto:tsitsigkosdim@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ tsitsigkosdim@gmail.com} \ $|$ \
+\href{tel:+30 6942951698}{\raisebox{-0.05\height}\faMobile \ +30 6942951698}
+ \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+ %\small Postdoctoral Researcher and Software Engineer with extensive experience in data management, including indexing, query optimization, and query processing. Skilled in developing efficient indices for parallel processing of relational, spatial, and multi-dimensional data. Experienced in designing and implementing research-based software frameworks. Strong collaborator with excellent communication skills, bridging research insights and practical software engineering solutions.
+%\small Research software engineer focused on data systems, performance, and parallel computing. Strong background in relational and spatial data processing, query optimization, and large-scale system design. Experienced in C++, Java, and Python, creating algorithms and frameworks for high-performance data systems. Passionate about efficient code, reliability, and building solid data infrastructure. add something about the future...
+%\small Software engineer and researcher focused on data management and parallel computing. Strong background in relational and spatial data processing, query optimization, and large-scale system design. Experienced in C++, Java, and Python, developing algorithms and frameworks for high-performance data systems. Looking to work in a challenging environment where I can apply my expertise and continue building my technical skills as part of an engineering team.
+
+\small Software engineer and researcher focused on data management and parallel computing, with a strong background in data processing, indexing, and query optimization. Experienced in C++, Java, and Python, developing algorithms and frameworks for high-performance data systems. Looking to work in a challenging environment where I can apply my skills and continue developing as part of an engineering team.
+
+
+
+%Experience
+\section{Work Experience}
+
+%\begin{jobshort}{\href{https://archimedesai.gr/en/}{ARCHIMEDES} unit of Athena Research Center, Athens}{February 2025 - present}
+%Postdoctoral Researcher
+%\item Member of the data science team, focusing on multi-dimensional and vector data.
+%\end{jobshort}
+
+\begin{job}{\href{https://archimedesai.gr/en/}{Archimedes} unit of Athena Research Center, Athens, Greece}{Feb 2025 - present}
+\textbf{Postdoctoral Researcher}
+
+\begin{itemize}
+
+\item Member of the data science team, focusing on multi-dimensional and vector data.
+\item Designing and implementing indexing and search methods for multi-dimensional and vector data.
+\end{itemize}
+
+\end{job}
+
+
+\begin{job}{\href{https://www.cse.uoi.gr/?lang=en}{Dept. of Computer Science \& Engineering}, Univ. of Ioannina, Greece}{Jan 2024 – Dec 2024}
+	\textbf{Doctoral Researcher}
+	
+	Participated in the Greek funding project \href {https://www.cs.uoi.gr/~nikos/mesa/}{MESA}: In-memory Spatial Analytics Made Scalable 
+	
+	\begin{itemize}
+		
+		\item Implemented novel parallel and non-parallel index structures for spatial queries, including spatial join, range queries, and k-NN.
+		
+		\item Contributed to the design and development of a prototype distributed spatial data management framework using MPI and OpenMP.
+		
+	\end{itemize}
+	
+\end{job}
+
+\vspace{-1.2\baselineskip}
+
+\begin{job}{\href{https://www.imsi.athenarc.gr/en}{Information Management Systems Institute}, Athens, Greece}{Dec 2012 – Dec 2023}
+\textbf{Software Engineer}
+
+Participated in several Greek and European funding projects, including:
+	\begin{itemize}
+		
+		\item \href{https://www.more2020.eu/}{MORE}: Management of Real-time Energy data.
+		
+		(Oct 2020 – Dec 2023)		
+		\begin{itemize}
+			\item Developed a continuous evaluation module for edge-based sliding-window aggregations in Java.
+			\item Built parallel and distributed pattern extraction methods using Python and Dask, improving processing. efficiency.
+		\end{itemize}
+		
+		\vspace{-1\baselineskip}
+		
+		
+		\item \href{https://amnesia.openaire.eu/}{Amnesia}: A Powerful Data Anonymization Platform.
+		
+		(Aug 2015 – Sep 2020)
+		\begin{itemize}
+			\item Designed and built the framework from scratch as the lead software engineer.
+			
+		\end{itemize}
+		
+		\vspace{-1\baselineskip}
+		
+		\item \href{http://www.modissense.gr/}{MoDisSENSE}: A Distributed Spatio-Temporal and Textual Processing Platform for Social.
+		
+		(Dec 2012 - Jul 2015)
+		\begin{itemize}
+			\item Engineered scalable algorithms for POI discovery and trajectory reconstruction using Hadoop, HBase, and PostGIS.
+			\item Designed and implemented web services supporting POI discovery and recommendation.
+			
+		\end{itemize}
+		
+	\end{itemize}
+\end{job}
+
+\vspace{-2\baselineskip}
+
+\begin{job}{\href{https://www.informatik.uni-mainz.de/en/}{Institute of CS}, Johannes Gutenberg University Mainz, Germany}{May 2022 – Jul 2022}
+	\textbf{Research Visitor}
+	
+	\begin{itemize}
+		
+		\item PhD internship at the Institute of Computer Science with Professor Panagiotis Bouros, focusing on spatial joins.
+	\end{itemize}
+	
+\end{job}
+
+
+
+\begin{job}{Hellenic Army Information Technology Support Center, Athens, Greece}{Apr 2017 – Nov 2018}
+\textbf{Software Engineer}
+	
+	\begin{itemize}
+		
+		\item Maintain and update code for multiple Java applications, while developing new features.
+	\end{itemize}
+	
+\end{job}
+
+%----------------------------------------------------------------------------------------
+%	Awards
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.75\baselineskip}
+\section{Awards}
+\small 3rd place - \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest} (March 2025, Athens).
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Education}
+
+\begin{job}{Ph.D., Computer Science}{Jul 2019 – Dec 2024}
+Department of Computer Science \& Engineering, University of Ioannina
+
+\underline{\textit{Thesis: In-memory Indexing for Parallel Processing of Single and Multi-Dimensional Queries}}
+\end{job}
+
+\vspace{-0.2\baselineskip}
+
+\begin{job}{M.Sc., Computing Systems: Software and Hardware, Computer Science}{Nov 2012 – Sep 2016}
+Department of Informatics and Telecommunications, University of Athens
+
+\underline{\textit{Thesis: Complex Event Processing (CEP) for Intrusion Detection}}	
+\end{job}
+
+\vspace{-0.2\baselineskip}
+
+\begin{job}{B.Sc., Computer Science}{Sep 2006 – Jun 2012}
+Department of Informatics and Telecommunications, University of Athens
+
+\underline{\textit{Thesis: Clustering Wikipedia resources}}
+\end{job}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Technical Skills
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	Languages &  \normalsize{C, C++, Java, Python
+	}\\
+	Databases  &  \normalsize{MySQL, PostgreSQL, PostGIS, HBase}\\ 
+	Parallel \& Distributed Systems &  \normalsize{Hadoop, Spark, Dask, OpenMP, SIMD, MPI}\\
+	Frameworks  &  \normalsize{Spring}\\ 
+	Web Development &  \normalsize{JavaScript, JSP, JSF, PHP
+	}\\
+	Operating Systems &  \normalsize{Ubuntu, Microsoft Windows, macOS
+	}\\  
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	Professional Activities 
+%----------------------------------------------------------------------------------------
+\section{Academic Service}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	Member of Program Committee
+	 &  \normalsize{TSAS 2023, ICDE 2026, IEEE BigData 2025
+	}\\
+	
+	
+	External Reviewer
+	  &  \normalsize{ICDE 2019-2025, VLDB 2019-2023, SIGMOD 2020, SIGSPATIAL 2020-2023, EDBT 2021-2025, ICDM 2025
+	  }\\ 
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+
+
+
+\section{Selected Publications}
+
+
+\begin{refsection}[citations.bib]
+	\nocite{*}
+	\printbibliography[heading=none]
+\end{refsection}
+
+
+%----------------------------------------------------------------------------------------
+%	Other
+%----------------------------------------------------------------------------------------
+\section{Other}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	Languages
+	&  \normalsize{Greek (native), English (Advanced)	}\\
+	
+	
+	
+	%Awards
+	%&  \normalsize{3rd place - \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest} (March 2025, Athens).
+	%}\\ 
+	
+	Volunteer	&  \normalsize{European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025.
+		
+	}\\ 
+\end{tabularx}
+
+
+\end{document}
