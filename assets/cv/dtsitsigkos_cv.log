@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.16)  21 OCT 2025 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.16)  21 OCT 2025 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,57 +748,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--216
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--232
+Underfull \hbox (badness 10000) in paragraph at lines 219--233
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 245.
+(Font)              <7> on input line 246.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 245.
+(Font)              <5> on input line 246.
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--285
+Underfull \hbox (badness 10000) in paragraph at lines 236--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--297
+Underfull \hbox (badness 10000) in paragraph at lines 277--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--298
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 312--317
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--325
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--333
+Underfull \hbox (badness 10000) in paragraph at lines 329--334
 
  []
 
 \blx@maxsegment@1=\count409
 \blx@sectionciteorder@1=\count410
-Package biblatex Info: Reference section=1 on input line 379.
-Package biblatex Info: Setting label 'refsection:1' on input line 379.
-Package biblatex Info: Reference section=0 on input line 383.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
+Package biblatex Info: Reference section=1 on input line 380.
+Package biblatex Info: Setting label 'refsection:1' on input line 380.
+Package biblatex Info: Reference section=0 on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
  (./dtsitsigkos_cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
 Package rerunfilecheck Info: File `dtsitsigkos_cv.out' has not changed.
 (rerunfilecheck)             Checksum: 075D27DA09C1A9CEE2880171C07F7639;831.
 Package logreq Info: Writing requests to 'dtsitsigkos_cv.run.xml'.
@@ -829,7 +829,7 @@ blic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on dtsitsigkos_cv.pdf (2 pages, 181313 bytes).
+Output written on dtsitsigkos_cv.pdf (2 pages, 181342 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
