@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.16)  19 JAN 2026 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.16)  20 JAN 2026 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,62 +743,62 @@ LaTeX Info: Redefining \nameref on input line 154.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 204--215
+Underfull \hbox (badness 10000) in paragraph at lines 203--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--232
+Underfull \hbox (badness 10000) in paragraph at lines 217--231
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 245.
+(Font)              <7> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 245.
+(Font)              <5> on input line 244.
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--285
+Underfull \hbox (badness 10000) in paragraph at lines 234--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--297
+Underfull \hbox (badness 10000) in paragraph at lines 275--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--296
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 316--321
+Underfull \hbox (badness 10000) in paragraph at lines 315--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--329
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--337
+Underfull \hbox (badness 10000) in paragraph at lines 331--336
 
  []
 
 \blx@maxsegment@1=\count409
 \blx@sectionciteorder@1=\count410
-Package biblatex Info: Reference section=1 on input line 383.
-Package biblatex Info: Setting label 'refsection:1' on input line 383.
-Package biblatex Info: Reference section=0 on input line 387.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+Package biblatex Info: Reference section=1 on input line 382.
+Package biblatex Info: Setting label 'refsection:1' on input line 382.
+Package biblatex Info: Reference section=0 on input line 386.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
  (./dtsitsigkos_cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
 Package rerunfilecheck Info: File `dtsitsigkos_cv.out' has not changed.
 (rerunfilecheck)             Checksum: EDD2BEC8598F761AF4336B2D6630796D;705.
 Package logreq Info: Writing requests to 'dtsitsigkos_cv.run.xml'.
@@ -829,7 +829,7 @@ blic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on dtsitsigkos_cv.pdf (2 pages, 179038 bytes).
+Output written on dtsitsigkos_cv.pdf (2 pages, 178823 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams
