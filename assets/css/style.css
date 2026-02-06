@@ -1074,4 +1074,36 @@ a:focus {
   .social-list { justify-content: center; }
 
   .timeline-text { max-width: 700px; }
+
+
+.timeline-text strong {
+  font-weight: 700;
+  color: var(--white);
+}
+  
+.bullet-list {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--light-gray);
+}
+
+.bullet-list li {
+  margin-bottom: 0rem;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: var(--light-gray);
+}
+
+.bullet-list li::marker {
+  color: var(--orange-yellow-crayola);
+}
+
+.timeline-text strong {
+  font-weight: 700;
+  color: var(--white);
+}
+
+
+
 }

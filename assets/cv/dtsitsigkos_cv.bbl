@@ -157,56 +157,6 @@
       \field{year}{2021}
       \true{nocite}
     \endentry
-    \entry{DBLP:conf/icde/TsitsigkosLBMT21}{inproceedings}{}
-      \name{author}{5}{ul=2}{%
-        {{un=0,uniquepart=base,hash=336e98d2114d7b680d49d4068356c9e7}{%
-           family={Tsitsigkos},
-           familyi={T\bibinitperiod},
-           given={Dimitrios},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8288a0a269d416d7ae8b12fa37940e25}{%
-           family={Lampropoulos},
-           familyi={L\bibinitperiod},
-           given={Konstantinos},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0ee1ec1f313469dcda5368e687a9371d}{%
-           family={Bouros},
-           familyi={B\bibinitperiod},
-           given={Panagiotis},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=364fce917c9b4c436a355a46622d38c0}{%
-           family={Mamoulis},
-           familyi={M\bibinitperiod},
-           given={Nikos},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=91d1c75a11be747b5e0d1bfbadea6ed9}{%
-           family={Terrovitis},
-           familyi={T\bibinitperiod},
-           given={Manolis},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{c1b087f07a49b805ab9a5da471446df5}
-      \strng{fullhash}{afe8b288512d0cb9e7951cba2db59790}
-      \strng{bibnamehash}{afe8b288512d0cb9e7951cba2db59790}
-      \strng{authorbibnamehash}{afe8b288512d0cb9e7951cba2db59790}
-      \strng{authornamehash}{c1b087f07a49b805ab9a5da471446df5}
-      \strng{authorfullhash}{afe8b288512d0cb9e7951cba2db59790}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{IEEE} International Conference on Data Engineering, ({ICDE})}
-      \field{title}{A Two-layer Partitioning for Non-point Spatial Data}
-      \field{year}{2021}
-      \true{nocite}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput
