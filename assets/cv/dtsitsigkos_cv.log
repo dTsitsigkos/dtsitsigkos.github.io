@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.3.16)  5 FEB 2026 18:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.11.9)  8 FEB 2026 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -853,25 +853,25 @@ LaTeX Font Warning: Font shape `TU/LatinModernSans(0)/m/sc' undefined
 .
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 232.
+(Font)              <9> on input line 234.
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 \blx@maxsegment@1=\count413
 \blx@sectionciteorder@1=\count414
-Package biblatex Info: Reference section=1 on input line 408.
-Package biblatex Info: Setting label 'refsection:1' on input line 408.
-Package biblatex Info: Reference section=0 on input line 412.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+Package biblatex Info: Reference section=1 on input line 413.
+Package biblatex Info: Setting label 'refsection:1' on input line 413.
+Package biblatex Info: Reference section=0 on input line 417.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
  (./dtsitsigkos_cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
 Package rerunfilecheck Info: File `dtsitsigkos_cv.out' has not changed.
 (rerunfilecheck)             Checksum: 72206CA42BBE3CEF886C8A710E4F8BC6;705.
 
@@ -885,7 +885,7 @@ Package logreq Info: Writing requests to 'dtsitsigkos_cv.run.xml'.
 Here is how much of TeX's memory you used:
  21176 strings out of 479819
  394671 string characters out of 5895846
- 1129130 words of memory out of 5000000
+ 1129128 words of memory out of 5000000
  38053 multiletter control sequences out of 15000+600000
  536565 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
