@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.3.16)  5 FEB 2026 18:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.3.16)  12 FEB 2026 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,21 +857,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 \blx@maxsegment@1=\count413
 \blx@sectionciteorder@1=\count414
-Package biblatex Info: Reference section=1 on input line 408.
-Package biblatex Info: Setting label 'refsection:1' on input line 408.
-Package biblatex Info: Reference section=0 on input line 412.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+Package biblatex Info: Reference section=1 on input line 429.
+Package biblatex Info: Setting label 'refsection:1' on input line 429.
+Package biblatex Info: Reference section=0 on input line 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
  (./dtsitsigkos_cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 459.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 459.
 Package rerunfilecheck Info: File `dtsitsigkos_cv.out' has not changed.
 (rerunfilecheck)             Checksum: 72206CA42BBE3CEF886C8A710E4F8BC6;705.
 
