@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -171,11 +171,11 @@
 \Huge{Dimitris Tsitsigkos} \\[7.5pt]
 \Large{Software Engineer (PhD)} \\[7.5pt]
 
-\href{https://gr.linkedin.com/in/dimitris-tsitsigkos}{\raisebox{-0.05\height}\faLinkedin\ dtsitsigkos} \ $|$ \ 
-\href{https://dtsitsigkos.github.io/}{\raisebox{-0.05\height}\faGlobe \ dtsitsigkos.github.io} \ $|$ \  
-\href{https://dblp.org/pid/163/0537.html}{\raisebox{-0.05\height}\faDatabase\ DBLP}  \ $|$ \ 
-\href{https://scholar.google.com/citations?user=z_KVU0QAAAAJ}{\raisebox{-0.05\height}\faGraduationCap\ Google Scholar}\ $|$ \
-\href{https://github.com/dTsitsigkos}{\raisebox{-0.05\height}\faGithub\ dtsitsigkos} \ 
+%\href{https://gr.linkedin.com/in/dimitris-tsitsigkos}{\raisebox{-0.05\height}\faLinkedin\ dtsitsigkos} \ $|$ \ 
+%\href{https://dtsitsigkos.github.io/}{\raisebox{-0.05\height}\faGlobe \ dtsitsigkos.github.io} \ $|$ \  
+%\href{https://dblp.org/pid/163/0537.html}{\raisebox{-0.05\height}\faDatabase\ DBLP}  \ $|$ \ 
+%\href{https://scholar.google.com/citations?user=z_KVU0QAAAAJ}{\raisebox{-0.05\height}\faGraduationCap\ Google Scholar}\ $|$ \
+%\href{https://github.com/dTsitsigkos}{\raisebox{-0.05\height}\faGithub\ dtsitsigkos} \ 
 
 \href{mailto:tsitsigkosdim@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ tsitsigkosdim@gmail.com} \ $|$ \
 \href{tel:+30 6942951698}{\raisebox{-0.05\height}\faMobile \ +30 6942951698}
@@ -191,32 +191,38 @@
 %\small Software Engineer (PhD) with experience building data management and parallel processing systems in research environments. Strong in performance-critical C++ development and in-memory indexing, with practical experience in distributed data processing and backend engineering using Java and Python. Focused on scalable architectures, efficient algorithms, and high-performance data systems.
 
 
-
+\vspace{-0.7\baselineskip}
 %Experience
 \section{Work Experience}
 
-\begin{job} {Archimedes Research on AI, Data Science and Algorithms, Greece}{Feb 2025 – Present\phantom{Ja}}	
-\textbf{Postdoctoral researcher (Data Science and Engineering team)} 
+\begin{job} {Postdoctoral researcher (Data Science and Engineering team)}{Feb 2025 – Present\phantom{Ja}}	
+\textbf{Archimedes Research on AI, Data Science and Algorithms, Athens, Greece} 
 
 \begin{itemize}
 
 \item Designed and implemented high-performance, in-memory multi-dimensional and vector indices in C++, using parallelism and hardware-aware optimizations to improve query throughput and latency.
 
-\item \underline{Technologies:} \textbf{C++, OpenMP, SIMD}.
+\item \underline{Technologies:} \textbf{C++, OpenMP, SIMD}
 \end{itemize}
 
 \end{job}
 
 
-\begin{job}{Dept. of Computer Science \& Engineering, Univ. of Ioannina, Greece}{Jan 2024 – Dec 2024}
-	\textbf{Software Engineer (PhD Research)}
+\begin{job}{PhD fellow }{Jan 2024 – Dec 2024}
+	\textbf{Department of Computer Science \& Engineering, Univ. of Ioannina, Greece}
 	\begin{itemize}
 		
-		\item Implemented spatial index structures in C++ for spatial join, range queries, and k-NN, using parallel algorithms and memory-efficient data partitioning to scale on multi-core systems.
+		%\item Implemented spatial index structures in C++ for spatial join, range queries, and k-NN, using parallel algorithms and memory-efficient data partitioning to scale on multi-core systems.
 		
-		\item Contributed to the design and development of a prototype distributed spatial data management system using MPI and OpenMP, focusing on scalability and performance.
+		%traditional and incremental 𝑘-NN, 𝜖-range, and two different
+		%algorithms for 𝜖-distance joins
 		
-		\item \underline{Technologies:} \textbf{C++, OpenMP, MPI}.
+		\item Implemented spatial index structures in C++ for distance queries (k-NN, range, distance joins), improving query performance compared to existing approaches.
+		
+		
+		\item Contributed to the design and development of a prototype distributed spatial data management system using MPI and OpenMP, reducing memory consumption by over 55\% while improving query performance.
+		
+		\item \underline{Technologies:} \textbf{C++, OpenMP, MPI}
 		
 	\end{itemize}
 	
@@ -225,78 +231,210 @@
 \vspace{-1\baselineskip}
 
 
-\begin{job}{Hellenic Army Information Technology Support Center, Greece}{Apr 2017 – Nov 2018}
-\textbf{Software Engineer} 
+\begin{job}{PhD fellow}{Jul 2019 – Dec 2024}
+	\textbf{Information Management Systems Institute, Athena Research Center, Athens, Greece} 
+	
+	\begin{itemize}
+	
+		\item PhD Research: 
+	
+		\begin{itemize}
+			
+			\item Optimized B+-Tree Index Structures
+				\begin{itemize}
+			
+				\item Designed and implemented BS-tree and CBS-tree, data-parallel B+-tree–based index structures optimized for in-memory query processing
+			
+				\item Achieved 2.5× higher query throughput vs B+-trees, learned indexes, and trie-based approaches
+			
+				\item Reduced memory consumption by up to 90\% using compressed layouts
+			
+				\item Designed for parallel execution and multi-core scalability
+			
+			\end{itemize}
+		
+			%\item Developed data-parallel, multithreaded BS‑tree and CBS‑tree (compressed variant) for in-memory indexing, achieving up to 2.5× faster single-threaded query throughput and up to 90\% memory savings compared to conventional B+‑trees, learned indexes, and trie-based structures, while demonstrating excellent data scalability, query scalability, and multi-core performance.
+		\item Indexing and Partitioning for Non-Point Spatial Data
+		
+			\begin{itemize}
+				\item Developed two-layer space-oriented partitioning for indexing non-point spatial objects
+				
+				\item Reduced spatial join cost by ~50\% compared to existing spatial indexing methods
+				
+				\item Achieved 2–3× faster range query performance vs R-trees, quad-trees and grid-based indexes
+				
+				\item Designed techniques supporting parallel spatial query processing
+			\end{itemize}
+			
+			
+		\item Parallel Spatial Join Processing
+			\begin{itemize}
+				\item Implemented a parallel spatial join algorithm based on the Partition-Based Spatial Merge (PBSM) algorithm
+				
+				\item Designed 1D and 2D partitioning strategies for efficient join processing
+				
+				\item Optimized sweep strategies to improve performance and scalability
+				
+				\item Enabled spatial joins over tens of millions of objects in under one second
+				
+			\end{itemize}
+	
+			%\item Implemented two-layer space-oriented partitioning for non-point spatial data, achieving ~50\% reduction in spatial join cost and 2–3× faster range query throughput compared to state-of-the-art spatial indexes (R‑trees, quad-trees, and grid-based methods), while supporting parallel processing and multi-core scalability.
+			
+			%\item Implemented a parallel in-memory spatial join framework by re-designing and tuning the PBSM (Partition-Based Spatial Merge) algorithm, including 1D/2D partitioning and sweep strategy optimization, enabling spatial joins of tens of millions of objects to complete in under one second while demonstrating excellent multi-core scalability.
+	
+		
+		
+	\end{itemize}
+		
+		\vspace{-1\baselineskip}
+		
+		\item Participated in European funding project:
+		\begin{itemize}
+		
+			\item \href{https://www.more2020.eu/}{MORE}: Management of Real-time Energy data. 
+				
+			\begin{itemize}
+				\item Built parallel continuous evaluation module in Java for sliding-window aggregations, enabling low-latency energy analytics.
+				\item Implemented parallel versions of time-series analytics algorithms in Python using Dask to improve efficiency and scalability for large-scale data processing.
+			
+				%\item \underline{Technologies:} \textbf{Java, Python, Dask}.
+			
+				%\item Parallel sliding-window aggregation module in Java and distributed, parallel time-series analytics in Python (Dask).
+			
+			\end{itemize}
+		\end{itemize}
+		
+		\vspace{-1\baselineskip}
+		
+		\item \underline{Technologies:} \textbf{C++, OpenMP, SIMD, Python, Dask}
+		
+	\end{itemize}
+\end{job}
+
+\vspace{-0.6\baselineskip}
+\begin{job}{Software Engineer}{Apr 2017 – Nov 2018}
+	\textbf{Hellenic Army Information Technology Support Center, Athens, Greece} 
 	
 	\begin{itemize}
 		
-		\item Maintained and extended Java backend applications, improving system performance and reducing database query latency.
 		
-		\item Designed new features and resolved production issues for internal information systems.
+		\item Maintained and extended Java backend applications for internal systems, improving performance and implementing new features.
 		
 		\item \underline{Technologies:} \textbf{Java, Oracle Database, JSF}.
 	\end{itemize}
 	
 \end{job}
 
-\begin{job}{Information Management Systems Institute, Athens, Greece}{Dec 2012 – Dec 2023}
-	\textbf{Software Engineer (Concurrent with MSc and PhD studies)}
+
+\begin{job}{Research Engineer}{Dec 2012 – Jun 2019}
+	\textbf{Information Management Systems Institute, Athena Research Center, Athens, Greece} 
 	
-	Participated in several \underline{Greek and European funding projects}, including:
+		
+	Participated in several Greek and European funding projects, including:
+	
 	\begin{itemize}
 		
-		\item \href{https://www.more2020.eu/}{MORE}: Management of Real-time Energy data.
+		\item \href{https://amnesia.openaire.eu/}{Amnesia}: A platform for anonymizing relational, multi-dimensional, and hierarchical data. 
 		
-		(Oct 2020 – Dec 2023)		
-		\begin{itemize}
-			\item Built parallel continuous evaluation module in Java for sliding-window aggregations, enabling low-latency energy analytics.
-			\item Implemented parallel and distributed versions of time-series analytics algorithms in Python using Dask to improve efficiency and scalability for large-scale data processing.
-			\item \underline{Technologies:} \textbf{Java, Python, Dask}.
-		\end{itemize}
-		
-		
-		\item \href{https://amnesia.openaire.eu/}{Amnesia}: A platform for anonymizing relational, multi-dimensional, and hierarchical data.
-		
-		(Aug 2015 – Sep 2020)
+		%(Aug 2015 – Sep 2020)
 		\begin{itemize}
 			
 			\item Implemented an open-source data anonymization platform for in-memory anonymization, supporting both web and desktop applications.
 			
 			\item Designed the architecture and full stack, with a Java backend providing RESTful APIs (Spring) and a web frontend using JavaScript and HTML.
 			
-			\item Integrated the platform into the  \href{https://www.openaire.eu/}{OpenAIRE}
-			ecosystem, making it accessible to a global community of researchers and data providers.
+			\item Integrated the platform into the  \href{https://www.openaire.eu/}{OpenAIRE} ecosystem, enabling global researchers, data providers, and companies to anonymize data efficiently.
 			
-			\item \underline{Technologies:} \textbf{Java, Spring, RESTful Web Services, JavaScript}.
+			%\item \underline{Technologies:} \textbf{Java, Spring, RESTful Web Services, JavaScript}.
+			
+			%\item Built in-memory anonymization platform (Java/Spring/REST), widely used by researchers.
 			
 		\end{itemize}
 		
 		\vspace{-1\baselineskip}
 		
-		\item \href{http://www.modissense.gr/}{MoDisSENSE}: A Distributed Spatio-Temporal and Textual Processing Platform for Social.
+		\item \href{http://www.modissense.gr/}{MoDisSENSE}: A Distributed Spatio-Temporal and Textual Processing Platform for Social. 
 		
-		(Dec 2012 – Jul 2015)
+		%(Dec 2012 – Jul 2015)
 		\begin{itemize}
-			\item Developed distributed data processing algorithms in Java using Hadoop and HBase to analyze large-scale location data, including point-of-interest discovery and trajectory reconstruction from GPS traces.
-			\item Built backend RESTful APIs and services with PostgreSQL for spatial data processing and recommendations.
-			\item \underline{Technologies:} \textbf{Java, RESTful Web Services, MapReduce, Hadoop, HBase, PostgreSQL}.
+			%\item Developed distributed data processing algorithms in Java using Hadoop and HBase to analyze large-scale location data, including point-of-interest discovery and trajectory reconstruction from GPS traces.
+			%\item Built backend RESTful APIs and services with PostgreSQL for spatial data processing and recommendations.
+			%\item \underline{Technologies:} \textbf{Java, RESTful Web Services, MapReduce, Hadoop, HBase, PostgreSQL}.
+			
+			
+			\item Built distributed spatio-temporal processing (Java/Hadoop/HBase) for trajectory reconstruction and POI analytics with RESTful APIs and PostgreSQL.
 			
 		\end{itemize}
 		
+		\vspace{-1\baselineskip}
+	
+		\item \underline{Technologies:} \textbf{Java, RESTful Web Services, Spring, MapReduce, Hadoop, HBase, PostgreSQL}
+	
 	\end{itemize}
 \end{job}
 
-\vspace{-1\baselineskip}
-
-%----------------------------------------------------------------------------------------
-%	Awards
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\begin{job}{3rd place — \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest}, Athens} {Mar 2025}
+%\begin{job}{Software Engineer (Concurrent with MSc/PhD)}{Dec 2012 – Dec 2023}
+%	\textbf{Information Management Systems Institute, Athens, Greece}
 	
-\end{job}
+%	Participated in several \underline{Greek and European funding projects}, including:
+%	\begin{itemize}
+		
+%		\item \href{https://www.more2020.eu/}{MORE}: Management of Real-time Energy data. 
+		
+		%(Oct 2020 – Dec 2023)		
+%		\begin{itemize}
+%			\item Built parallel continuous evaluation module in Java for sliding-window aggregations, enabling low-latency energy analytics.
+%			\item Implemented parallel and distributed versions of time-series analytics algorithms in Python using Dask to improve efficiency and scalability for large-scale data processing.
+			
+			%\item \underline{Technologies:} \textbf{Java, Python, Dask}.
+		
+			%\item Parallel sliding-window aggregation module in Java and distributed, parallel time-series analytics in Python (Dask).
+		
+%		\end{itemize}
+		
+%		\vspace{-1\baselineskip}
+		
+%		\item \href{https://amnesia.openaire.eu/}{Amnesia}: A platform for anonymizing relational, multi-dimensional, and hierarchical data. 
+		
+		%(Aug 2015 – Sep 2020)
+%		\begin{itemize}
+			
+%			\item Implemented an open-source data anonymization platform for in-memory anonymization, supporting both web and desktop applications.
+			
+%			\item Designed the architecture and full stack, with a Java backend providing RESTful APIs (Spring) and a web frontend using JavaScript and HTML.
+			
+%			\item Integrated the platform into the  \href{https://www.openaire.eu/}{OpenAIRE} ecosystem, making it accessible to a global community of researchers and data providers.
+			
+			%\item \underline{Technologies:} \textbf{Java, Spring, RESTful Web Services, JavaScript}.
+			
+			%\item Built in-memory anonymization platform (Java/Spring/REST), widely used by researchers.
+			
+%		\end{itemize}
+		
+%		\vspace{-1\baselineskip}
+		
+%		\item \href{http://www.modissense.gr/}{MoDisSENSE}: A Distributed Spatio-Temporal and Textual Processing Platform for Social. 
+		
+		%(Dec 2012 – Jul 2015)
+%		\begin{itemize}
+			%\item Developed distributed data processing algorithms in Java using Hadoop and HBase to analyze large-scale location data, including point-of-interest discovery and trajectory reconstruction from GPS traces.
+			%\item Built backend RESTful APIs and services with PostgreSQL for spatial data processing and recommendations.
+			%\item \underline{Technologies:} \textbf{Java, RESTful Web Services, MapReduce, Hadoop, HBase, PostgreSQL}.
+			
+			
+%			\item Built distributed spatio-temporal processing (Java/Hadoop/HBase) for trajectory reconstruction and POI analytics with RESTful APIs and PostgreSQL.
+			
+%		\end{itemize}
+		\vspace{-1\baselineskip}
+		
+%		\item \underline{Technologies:} \textbf{Java, Python, RESTful Web Services, Spring, MapReduce, Hadoop, Dask, HBase, PostgreSQL.}
+		
+%	\end{itemize}
+%\end{job}
+
+%\vspace{-1\baselineskip}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -305,8 +443,8 @@
 \section{Education}
 
 
-\begin{job}{PhD, Computer Science}{Jul 2019 – Dec 2024}
-	Department of Computer Science \& Engineering, University of Ioannina (UoI)
+\begin{job}{PhD, Data Management}{Jul 2019 – Dec 2024}
+	Department of Computer Science \& Engineering, University of Ioannina (UoI) in collaboration with Athena Research Center.
 	
 	\begin{itemize}
 		\item Visiting Researcher (PhD Collaboration), Institute of Computer Science (Data Management research group), Johannes Gutenberg University Mainz, Germany (May 2022 – Jul 2022)
@@ -314,6 +452,8 @@
 	\end{itemize}
 	\vspace{-1\baselineskip}
 	\underline{\textit{Thesis: In-memory Indexing for Parallel Processing of Single and Multi-Dimensional Queries.}}
+	
+	\underline{	Published papers in:} ICDE, VLDBJ, TKDE and SIG-SPATIAL
 \end{job}
 
 \vspace{0.2\baselineskip}
@@ -335,6 +475,8 @@
 
 
 
+
+
 %----------------------------------------------------------------------------------------
 %	Technical Skills
 %----------------------------------------------------------------------------------------
@@ -348,10 +490,27 @@
 	}\\
 	Operating Systems: &  \normalsize{Ubuntu, Microsoft Windows, macOS
 	}\\
-	Other: &  \normalsize{Performance optimization, in-memory indexing, scalable architectures, distributed system design.
+	Other: &  \normalsize{Data management, in-memory indexing \& optimization, parallel \& distributed Systems
 	}\\   
 \end{tabularx}
 
+
+%----------------------------------------------------------------------------------------
+%	Awards
+%----------------------------------------------------------------------------------------
+
+\section{Additional Experience \& Awards}
+
+%\begin{job}{3rd place — %\href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest}, Athens} {Mar 2025}	
+
+\begin{itemize}
+	\item 3rd place — \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest}, Athens (Mar 2025)
+	\item External reviewer or member of program committee for about 8 conferences and journals on data management
+	\item Published more than 10 peer-reviewed papers in international conferences and journals (h-index: 5)
+	\item Volunteer: European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025
+\end{itemize}
+	
+%\end{job}
 
 
 %----------------------------------------------------------------------------------------
@@ -359,14 +518,14 @@
 %----------------------------------------------------------------------------------------
 
 
-\section{Selected Publications}
+%\section{Selected Publications}
 
 
-\begin{refsection}[citations.bib]
-	\setlength\bibitemsep{0.5em}
-	\nocite{*}
-	\printbibliography[heading=none]
-\end{refsection}
+%\begin{refsection}[citations.bib]
+%	\setlength\bibitemsep{0.5em}
+%	\nocite{*}
+%	\printbibliography[heading=none]
+%\end{refsection}
 
 
 %----------------------------------------------------------------------------------------
@@ -374,22 +533,37 @@
 %----------------------------------------------------------------------------------------
 
 %\vspace{-0.4 cm}
-\section{Other}
+%\section{Other}
 %\vspace{0.2\baselineskip}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-	Languages
-	&  \normalsize{Greek (native), English (Advanced)	}\\
+%\begin{tabularx}{\linewidth}{@{}l X@{}}
+%	Languages
+%	&  \normalsize{Greek (native), English (Advanced)	}\\
 	
-	
-	
-	%Awards
-	%&  \normalsize{3rd place - \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest} (March 2025, Athens).
-	%}\\ 
-	
-	Volunteer	&  \normalsize{European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025.
+%	Volunteer	&  \normalsize{European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025.
 		
-	}\\ 
-\end{tabularx}
+%	}\\ 
+	
+	
+%\end{tabularx}
+
+\section{Languages}
+%\vspace{0.2\baselineskip}
+\begin{itemize}
+	\item Greek (native)
+	\item English (Advanced)
+\end{itemize}
+
+
+
+	
+\section{External Links}
+\begin{itemize}
+	\item LinkedIn: \texttt{https://gr.linkedin.com/in/dimitris\_tsitsigkos}
+	\item Google Scholar: \texttt{https://scholar.google.com/citations?user=z\_KVU0QAAAAJ}
+	\item DBLP: \texttt{https://dblp.org/pid/163/0537.html}
+	\item GitHub: \texttt{https://github.com/dTsitsigkos}
+	\item Personal website: \texttt{https://dtsitsigkos.github.io/}
+\end{itemize}
 
 
 \end{document}
