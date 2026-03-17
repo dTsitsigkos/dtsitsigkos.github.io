@@ -191,7 +191,7 @@
 %\small Software Engineer (PhD) with experience building data management and parallel processing systems in research environments. Strong in performance-critical C++ development and in-memory indexing, with practical experience in distributed data processing and backend engineering using Java and Python. Focused on scalable architectures, efficient algorithms, and high-performance data systems.
 
 
-\vspace{-0.7\baselineskip}
+\vspace{-1.2\baselineskip}
 %Experience
 \section{Work Experience}
 
@@ -200,7 +200,7 @@
 
 \begin{itemize}
 
-\item Designed and implemented high-performance, in-memory multi-dimensional and vector indices in C++, using parallelism and hardware-aware optimizations to improve query throughput and latency.
+\item Designed and implemented high-performance, in-memory multi-dimensional and vector indices in C++, using parallelism and hardware-aware optimizations to improve query throughput and latency
 
 \item \underline{Technologies:} \textbf{C++, OpenMP, SIMD}
 \end{itemize}
@@ -217,7 +217,7 @@
 		%traditional and incremental 𝑘-NN, 𝜖-range, and two different
 		%algorithms for 𝜖-distance joins
 		
-		\item Implemented spatial index structures in C++ for distance queries (k-NN, range, distance joins), improving query performance compared to existing approaches.
+		\item Contributed to the implementation of spatial index structures in C++ for distance queries (k‑NN, range, distance joins), improving query performance compared to existing approaches
 		
 		
 		\item Contributed to the design and development of a prototype distributed spatial data management system using MPI and OpenMP, reducing memory consumption by over 55\% while improving query performance.
@@ -243,13 +243,13 @@
 			\item Optimized B+-Tree Index Structures
 				\begin{itemize}
 			
-				\item Designed and implemented BS-tree and CBS-tree, data-parallel B+-tree–based index structures optimized for in-memory query processing
+				\item Implemented BS‑tree, a gapped data‑parallel B+‑tree, and its compressed variant CBS‑tree for high-performance in-memory indexing
 			
-				\item Achieved 2.5× higher query throughput vs B+-trees, learned indexes, and trie-based approaches
+				\item Both BS‑tree and CBS‑tree achieved 1.5$\times$–2.5$\times$ higher throughput versus B+-trees, learned indexes, and trie-based approaches across different read and update workloads
 			
-				\item Reduced memory consumption by up to 90\% using compressed layouts
+				\item CBS‑tree uses 56\%–94\% less memory than competing indexes on compressible datasets while maintaining superior throughput
 			
-				\item Designed for parallel execution and multi-core scalability
+				\item Designed SIMD‑friendly node layouts, branchless search, and efficient gap handling to fully exploit data-parallel CPU features, boosting single-threaded performance and scaling across cores
 			
 			\end{itemize}
 		
@@ -259,9 +259,9 @@
 			\begin{itemize}
 				\item Developed two-layer space-oriented partitioning for indexing non-point spatial objects
 				
-				\item Reduced spatial join cost by ~50\% compared to existing spatial indexing methods
+				\item Reduced spatial join cost by $\sim$50\% compared to existing spatial indexing methods
 				
-				\item Achieved 2–3× faster range query performance vs R-trees, quad-trees and grid-based indexes
+				\item Achieved 2–3$\times$ faster range query performance vs R-trees, quad-trees and grid-based indexes
 				
 				\item Designed techniques supporting parallel spatial query processing
 			\end{itemize}
@@ -269,13 +269,12 @@
 			
 		\item Parallel Spatial Join Processing
 			\begin{itemize}
-				\item Implemented a parallel spatial join algorithm based on the Partition-Based Spatial Merge (PBSM) algorithm
+				\item Implemented a parallel spatial join algorithm for rectangles using the Partition-Based Spatial Merge (PBSM)
 				
-				\item Designed 1D and 2D partitioning strategies for efficient join processing
+				\item Optimized 1D/2D partitioning, sweep strategies, and data-driven parameter tuning to maximize join performance
 				
-				\item Optimized sweep strategies to improve performance and scalability
-				
-				\item Enabled spatial joins over tens of millions of objects in under one second
+				\item Achieved parallel spatial joins of tens of millions of rectangles in <1 s on multi-core systems, demonstrating high scalability and efficiency
+
 				
 			\end{itemize}
 	
@@ -295,8 +294,8 @@
 			\item \href{https://www.more2020.eu/}{MORE}: Management of Real-time Energy data. 
 				
 			\begin{itemize}
-				\item Built parallel continuous evaluation module in Java for sliding-window aggregations, enabling low-latency energy analytics.
-				\item Implemented parallel versions of time-series analytics algorithms in Python using Dask to improve efficiency and scalability for large-scale data processing.
+				\item Built parallel continuous evaluation module in Java for sliding-window aggregations, enabling low-latency energy analytics
+				\item Implemented parallel versions of time-series analytics algorithms in Python using Dask to improve efficiency and scalability for large-scale data processing
 			
 				%\item \underline{Technologies:} \textbf{Java, Python, Dask}.
 			
@@ -319,7 +318,7 @@
 	\begin{itemize}
 		
 		
-		\item Maintained and extended Java backend applications for internal systems, improving performance and implementing new features.
+		\item Maintained and extended Java backend applications for internal systems, improving performance and implementing new features
 		
 		\item \underline{Technologies:} \textbf{Java, Oracle Database, JSF}.
 	\end{itemize}
@@ -340,11 +339,11 @@
 		%(Aug 2015 – Sep 2020)
 		\begin{itemize}
 			
-			\item Implemented an open-source data anonymization platform for in-memory anonymization, supporting both web and desktop applications.
+			\item Implemented an open-source data anonymization platform for in-memory anonymization, supporting both web and desktop applications
 			
-			\item Designed the architecture and full stack, with a Java backend providing RESTful APIs (Spring) and a web frontend using JavaScript and HTML.
+			\item Designed the architecture and full stack, with a Java backend providing RESTful APIs (Spring) and a web frontend using JavaScript and HTML
 			
-			\item Integrated the platform into the  \href{https://www.openaire.eu/}{OpenAIRE} ecosystem, enabling global researchers, data providers, and companies to anonymize data efficiently.
+			\item Integrated the platform into the  \href{https://www.openaire.eu/}{OpenAIRE} ecosystem, enabling global researchers, data providers, and companies to anonymize data efficiently
 			
 			%\item \underline{Technologies:} \textbf{Java, Spring, RESTful Web Services, JavaScript}.
 			
@@ -363,7 +362,7 @@
 			%\item \underline{Technologies:} \textbf{Java, RESTful Web Services, MapReduce, Hadoop, HBase, PostgreSQL}.
 			
 			
-			\item Built distributed spatio-temporal processing (Java/Hadoop/HBase) for trajectory reconstruction and POI analytics with RESTful APIs and PostgreSQL.
+			\item Built distributed spatio-temporal processing (Java/Hadoop/HBase) for trajectory reconstruction and POI analytics with RESTful APIs and PostgreSQL
 			
 		\end{itemize}
 		
@@ -440,11 +439,31 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Technical Skills
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+	Languages: &  \normalsize{C++, Java, Python
+	}\\
+	Data Management:  &  \normalsize{MySQL, PostgreSQL, PostGIS, HBase}\\ 
+	Parallel \& Distributed Systems: &  \normalsize{OpenMP, SIMD, Spark, MPI, Hadoop, Dask}\\
+	Backend \& Web: &  \normalsize{Spring, RESTful Web Services, JavaScript, JSP, JSF
+	}\\
+	Operating Systems: &  \normalsize{Ubuntu, Microsoft Windows, macOS
+	}\\
+	Other: &  \normalsize{Data management, in-memory indexing \& optimization, parallel \& distributed Systems
+	}\\   
+\end{tabularx}
+
+
 \section{Education}
 
 
 \begin{job}{PhD, Data Management}{Jul 2019 – Dec 2024}
-	Department of Computer Science \& Engineering, University of Ioannina (UoI) in collaboration with Athena Research Center.
+	Department of Computer Science \& Engineering, University of Ioannina (UoI) in collaboration with Athena Research Center
 	
 	\begin{itemize}
 		\item Visiting Researcher (PhD Collaboration), Institute of Computer Science (Data Management research group), Johannes Gutenberg University Mainz, Germany (May 2022 – Jul 2022)
@@ -477,22 +496,7 @@
 
 
 
-%----------------------------------------------------------------------------------------
-%	Technical Skills
-%----------------------------------------------------------------------------------------
-\section{Technical Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-	Languages: &  \normalsize{C, C++, Java, Python
-	}\\
-	Data Management:  &  \normalsize{MySQL, PostgreSQL, PostGIS, HBase}\\ 
-	Parallel \& Distributed Systems: &  \normalsize{OpenMP, SIMD, MPI, Hadoop, Spark, Dask}\\
-	Backend \& Web: &  \normalsize{Spring, RESTful Web Services, JavaScript, JSP, JSF
-	}\\
-	Operating Systems: &  \normalsize{Ubuntu, Microsoft Windows, macOS
-	}\\
-	Other: &  \normalsize{Data management, in-memory indexing \& optimization, parallel \& distributed Systems
-	}\\   
-\end{tabularx}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -504,9 +508,9 @@
 %\begin{job}{3rd place — %\href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest}, Athens} {Mar 2025}	
 
 \begin{itemize}
+	\item Published papers in top-tier peer-reviewed database conferences and journals (h-index: 5), including SIGMOD, VLDBJ, ICDE and EDBT
 	\item 3rd place — \href{https://databasecontest2024.athenarc.gr/}{Future of Database Programming Contest}, Athens (Mar 2025)
-	\item External reviewer or member of program committee for about 8 conferences and journals on data management
-	\item Published more than 10 peer-reviewed papers in international conferences and journals (h-index: 5)
+	\item External reviewer or member of program committee for about 7 conferences and journals on data management
 	\item Volunteer: European Data Forum 2014, EDBT/ICDT 2023 Joint Conference, 6th ACM Europe Summer School on Data Science 2025, HDMS 2025
 \end{itemize}
 	
@@ -546,16 +550,7 @@
 	
 %\end{tabularx}
 
-\section{Languages}
-%\vspace{0.2\baselineskip}
-\begin{itemize}
-	\item Greek (native)
-	\item English (Advanced)
-\end{itemize}
 
-
-
-	
 \section{External Links}
 \begin{itemize}
 	\item LinkedIn: \texttt{https://gr.linkedin.com/in/dimitris\_tsitsigkos}
@@ -564,6 +559,19 @@
 	\item GitHub: \texttt{https://github.com/dTsitsigkos}
 	\item Personal website: \texttt{https://dtsitsigkos.github.io/}
 \end{itemize}
+
+
+\section{Languages}
+%\vspace{0.2\baselineskip}
+\begin{itemize}
+	\item Greek (Native)
+	\item English (Fluent)
+\end{itemize}
+
+
+
+	
+
 
 
 \end{document}

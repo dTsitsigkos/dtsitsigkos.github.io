@@ -376,9 +376,10 @@
               
 
               <ul class="timeline-text bullet-list">
-                <li>• Implemented spatial index structures in C++ for distance queries (k-NN, range, distance joins), improving query performance compared to existing approaches.</li>
-                <li>• Contributed to the design and development of a prototype distributed spatial data management system using MPI and OpenMP, reducing memory consumption by over 55% while improving query performance.</li>
-                <li>• <u>Technologies:</u> <strong>C++, OpenMP, MPI.</strong>
+                • Participated in Greek funding project MESA: In-memory Spatial Analytics Made Scalable: <br>
+                <li>- Contributed to the implementation spatial index structures in C++ for distance queries (k-NN, range, distance joins), improving query performance compared to existing approaches.</li>
+                <li>- Contributed to the design and development of a prototype distributed spatial data management system using MPI and OpenMP, reducing memory consumption by over 55% while improving query performance.</li>
+                <li>- <u>Technologies:</u> <strong>C++, OpenMP, MPI.</strong>
               </ul>
 
             </li>
@@ -400,15 +401,18 @@
                 <li>
                     • PhD Research:
                     <ul class="timeline-text bullet-list">
-                      <li>- Developed data-parallel, multithreaded BS‑tree and CBS‑tree (compressed variant) for in-memory indexing, achieving up to 2.5× faster single-
-                          threaded query throughput and up to 90% memory savings compared to conventional B+‑trees, learned indexes, and trie-based structures, while
-                          demonstrating excellent data scalability, query scalability, and multi-core performance.</li>
-                     <li>- Implemented two-layer space-oriented partitioning for non-point spatial data, achieving 50% reduction in spatial join cost and 2–3× faster
-                          range query throughput compared to state-of-the-art spatial indexes (R‑trees, quad-trees, and grid-based methods), while supporting parallel
-                          processing and multi-core scalability.</li>
-                      <li>Implemented a parallel in-memory spatial join algorithm by re-designing and tuning the PBSM (Partition-Based Spatial Merge) algorithm,
-                        including 1D/2D partitioning and sweep strategy optimization, enabling spatial joins of tens of millions of objects to complete in under one
-                        second while demonstrating excellent multi-core scalability.</li>
+                      <li>-(Optimized B+-Tree Index Structures): Implemented the BS-tree, a gapped data-parallel B+-tree, along with its compressed variant CBS-tree for high-performance in-memory indexing. Both structures 
+                        deliver 1.5x–2.5x higher throughput compared to traditional B+-trees, learned indexes, and trie-based approaches across a variety of read and update workloads. 
+                        The CBS-tree further improves efficiency by reducing memory usage by 56%–94% on compressible datasets while maintaining superior performance. This was achieved 
+                        through SIMD-friendly node layouts, branchless search techniques, and efficient gap handling, enabling full utilization of data-parallel CPU features for enhanced 
+                        single-threaded performance and strong scalability across multiple cores.</li>
+                     <li>-(Indexing and Partitioning for Non-Point Spatial Data): Developed a two-layer, space-oriented partitioning approach for indexing non-point spatial objects, significantly improving query efficiency. This method 
+                        reduces spatial join costs by approximately 50% compared to existing spatial indexing techniques and achieves 2–3× faster range query performance than R-trees, 
+                        quad-trees, and grid-based indexes. Additionally, it incorporates techniques that support parallel spatial query processing, enabling better scalability and 
+                        performance on modern hardware.</li>
+                      <li>-(Parallel Spatial Join Processing): Implemented a parallel spatial join algorithm for rectangles based on the Partition-Based Spatial Merge (PBSM) approach, optimizing 1D/2D partitioning schemes, 
+                        sweep strategies, and data-driven parameter tuning to maximize performance. The solution achieves spatial joins over tens of millions of rectangles in under one 
+                        second on multi-core systems, demonstrating high efficiency and strong scalability.</li>
                     </ul>
 
                     • Participated in European funding project:<br>
@@ -499,7 +503,7 @@
           <dl class="skills-list">
             <div class="skill-row">
               <dt>Languages</dt>
-              <dd>C, C++, Java, Python</dd>
+              <dd> C++, Java, Python</dd>
             </div>
 
             <div class="skill-row">
