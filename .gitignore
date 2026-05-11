@@ -1,0 +1,6 @@
+assets/cv/*.aux
+assets/cv/*.log
+assets/cv/*.out
+assets/cv/*.synctex.gz
+assets/cv/*.fls
+assets/cv/*.fdb_latexmk
